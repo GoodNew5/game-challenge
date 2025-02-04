@@ -3,8 +3,8 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build",
-    "deploy": "yarn run build && gh-pages -d dist"
+    "build": "parcel build --public-url ./",
+    "deploy": "parcel build --public-url ./ && gh-pages -d dist"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
