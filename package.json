@@ -1,0 +1,13 @@
+{
+  "name": "game-task",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
+    "deploy": "yarn run build && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.13.3"
+  }
+}
